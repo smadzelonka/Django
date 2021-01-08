@@ -32,4 +32,9 @@ python manage.py runserver
 add server db
 6.
 python manage.py migrate
-7.
+
+
+
+
+=========
+python manage.py makemigrations
