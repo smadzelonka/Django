@@ -16,8 +16,24 @@ python3 manage.py startapp main_app
 python manage.py runserver
 9.
 Add your server in settings and createdb 
+,,,,,,,,
+paql
+postgres CREATE DATABASE;
+,,,,,,,,
 10.
 python manage.py migrate
+11.
+touch main_app/urls.py
+12.
+in main_app/urls.py
+,,,,,,,,
+from django.urls import path
+from . import views
+
+urlpatterns = [
+
+]
+,,,,,,,,
 
 ================Git pull down =============
 1.

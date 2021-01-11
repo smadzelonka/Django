@@ -1,0 +1,7 @@
+{% extends 'base.html' %} {% block content %}
+<h1>Edit Cat {{ cat.name }}</h1>
+<form action="{% url 'cats_edit' cat.id %}" method="POST">
+  {%csrf_token %} {{ cat_form.as_p }}
+  <input class="btn" type="submit" value="Edit Cat" />
+</form>
+{% endblock %}
